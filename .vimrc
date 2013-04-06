@@ -14,7 +14,7 @@ let g:syntastic_enable_signs=0
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set backspace=2
+set backspace=indent,eol,start
 set autoindent
 
 set ttyfast
