@@ -8,6 +8,7 @@ syntax sync fromstart
 filetype on
 filetype plugin on
 autocmd FileType python set omnifunc=pythoncomplete#Complete
+let g:syntastic_enable_signs=0
 
 " General settings.
 set tabstop=4
