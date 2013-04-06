@@ -1,0 +1,11 @@
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+vbell off
+vbell_msg "" 
+bell_msg "" 
+startup_message off
+defscrollback 10000
+#shell -$SHELL
+shelltitle ''
+hardstatus alwayslastline
+hardstatus string '%{= kg}%{b g}[ %{b g}%H %{b g}][%= %{= kw}%{b w}%?%-Lw%?%{b r}(%{b w}%n*%f %t%?(%u)%?%{b r})%{b w}%?%+Lw%?%?%= %{b g}][%{b b} %d/%m %{b w}%c %{b g}]'
