@@ -72,4 +72,4 @@ map <C-T> :Gblame<CR>
 " Test stuff.
 " set runtimepath^=~/.vim/bundle/ctrlp.vim
 "autocmd vimenter * NERDTree
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
