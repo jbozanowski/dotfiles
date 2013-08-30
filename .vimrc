@@ -69,6 +69,9 @@ map <C-L> <C-W>l
 " The Magnificent Git Blame.
 map <C-T> :Gblame<CR>
 
+" Remapping leader.
+let mapleader = ","
+
 " Test stuff.
 " set runtimepath^=~/.vim/bundle/ctrlp.vim
 "autocmd vimenter * NERDTree
