@@ -72,6 +72,9 @@ map <C-T> :Gblame<CR>
 " Remapping leader.
 let mapleader = ","
 
+" Resize splits when resizing window.
+autocmd VimResized * :wincmd =
+
 " Test stuff.
 " set runtimepath^=~/.vim/bundle/ctrlp.vim
 "autocmd vimenter * NERDTree
