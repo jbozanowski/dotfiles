@@ -18,6 +18,7 @@ PATH=$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin
 export PATH
 
 alias "ls=ls -G"
+alias curl-ajax='curl -H "X-Requested-With: XMLHttpRequest"'
 
 # Temporary solution to a ML bug.
 unset LD_LIBRARY_PATH
