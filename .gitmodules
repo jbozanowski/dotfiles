@@ -16,3 +16,6 @@
 [submodule "vim/bundle/tcomment_vim"]
 	path = vim/bundle/tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "vim/bundle/vim-mercenary"]
+	path = vim/bundle/vim-mercenary
+	url = git://github.com/phleet/vim-mercenary.git
