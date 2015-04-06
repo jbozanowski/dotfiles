@@ -19,3 +19,6 @@
 [submodule "vim/bundle/vim-mercenary"]
 	path = vim/bundle/vim-mercenary
 	url = git://github.com/phleet/vim-mercenary.git
+[submodule "vim/bundle/vim-airline"]
+	path = vim/bundle/vim-airline
+	url = git@github.com:bling/vim-airline.git
