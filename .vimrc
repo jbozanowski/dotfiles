@@ -34,10 +34,6 @@ endif
 " Show the filename in the window titlebar.
 set title
 
-" Turn on automatic indentation.
-" FIXME Probably not, but let's give you a chance, buddy.
-set autoindent
-
 " Text width settings.
 function! SetTextWidth(width)
     execute "set textwidth=".a:width
