@@ -101,11 +101,12 @@ set mouse=a
 " Last window always has a status line.
 set laststatus=2
 
+" Status line configuration. Deprecated by vim-airline, leaving in for future
+" reference.
 " [encoding,file format] help file format, modified flag, read-only
 " flag, filetype, left/right separator, cursor column,cursor line/total lines,
 " percent through file.
-" FIXME Remove/reconfigure after vim-airline?
-set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+" set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 " Shows the line and column numbers and percentage file position if there is
 " room.
