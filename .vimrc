@@ -46,9 +46,9 @@ autocmd FileType rust :call SetTextWidth(99)
 " General settings.
 
 " Set formatting options for text blocks.
-" FIXME This needs tweaking. :help fo-table
+" Reference: :help fo-table
 " Default: tcq
-set formatoptions=tcqronl1
+set formatoptions=tcqrnl1
 
 " Number of spaces that a <Tab> in the file counts for.
 set tabstop=8
