@@ -131,8 +131,6 @@ set nowrapscan
 set scrolloff=5
 set sidescrolloff=5
 
-" set startofline
-
 " Open new horizontal split window below current.
 set splitbelow
 
@@ -142,16 +140,10 @@ set splitright
 " For GUI, mouse pointer is hidden when characters are typed.
 set mousehide
 
-" Unused when textwidth set.
-" set wrapmargin=1
-
-" set linebreak
-"
 " Don’t show the intro message when starting vim.
 set shortmess=atI
 
 " Show matching brackets.
-" FIXME Probably annoying, test.
 set showmatch
 
 " Navigating up/down through very long, wrapped-around lines as if they're a
@@ -178,7 +170,6 @@ inoremap <3-MiddleMouse> <Nop>
 inoremap <4-MiddleMouse> <Nop>
 
 " Reselect visual after indent/outdent.
-" FIXME Probably clashes with my muscle memory, but let's see.
 vnoremap < <gv
 vnoremap > >gv
 
@@ -224,8 +215,3 @@ let NERDTreeShowHidden=1
 
 " vim-airline settings.
 let g:airline_theme='dark'
-
-" Test stuff.
-" set runtimepath^=~/.vim/bundle/ctrlp.vim
-"autocmd vimenter * NERDTree
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
