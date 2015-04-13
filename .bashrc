@@ -16,6 +16,8 @@ PS1="\[$GREEN\]\u\[$RESET\] \[$BLUE\]\W\[$RESET\] \[$GREEN\](\$([[ -n \$(git bra
 
 PATH=$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin
 export PATH
+EDITOR=/usr/bin/vim
+export EDITOR
 
 alias "ls=ls -G"
 alias curl-ajax='curl -H "X-Requested-With: XMLHttpRequest"'
