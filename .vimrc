@@ -215,3 +215,6 @@ let NERDTreeShowHidden=1
 
 " vim-airline settings.
 let g:airline_theme='kalisi'
+
+" Vim-isort under ctrl+i
+let g:vim_isort_map = '<C-i>'
