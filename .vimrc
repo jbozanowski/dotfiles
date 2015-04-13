@@ -214,4 +214,4 @@ let g:syntastic_warning_symbol="!"
 let NERDTreeShowHidden=1
 
 " vim-airline settings.
-let g:airline_theme='dark'
+let g:airline_theme='kalisi'
