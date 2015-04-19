@@ -218,3 +218,7 @@ let g:airline_theme='kalisi'
 
 " Vim-isort under ctrl+i
 let g:vim_isort_map = '<C-i>'
+
+" Vim-gitgutter settings.
+let g:gitgutter_enabled = 0
+noremap <leader>g :GitGutterToggle<CR>
