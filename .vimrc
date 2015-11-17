@@ -212,6 +212,7 @@ let g:syntastic_warning_symbol="!"
 
 " NERDTree settings.
 let NERDTreeShowHidden=1
+map <C-n> :NERDTreeToggle<CR>
 
 " vim-airline settings.
 let g:airline_theme='kalisi'
