@@ -134,7 +134,7 @@ set sidescrolloff=5
 " Open new horizontal split window below current.
 set splitbelow
 
-" Open new vertial window to the right of current.
+" Open new vertical window to the right of current.
 set splitright
 
 " For GUI, mouse pointer is hidden when characters are typed.
