@@ -223,3 +223,6 @@ let g:vim_isort_map = '<C-i>'
 " Vim-gitgutter settings.
 let g:gitgutter_enabled = 0
 noremap <leader>g :GitGutterToggle<CR>
+
+" Rooter settings (cd to project root dir upon opening buffer).
+autocmd BufEnter *.py,*.html,*.haml,*.css,*.js :Rooter
