@@ -13,14 +13,20 @@ MAGENTA=$(tput setaf 5)
 WHITE=$(tput setaf 7)
 PS1="\[$GREEN\]\D{%m-%d-%s} \t\[$RESET\] \[$BLUE\]\W\[$RESET\] \[$GREEN\](\$([[ -n \$(git branch 2> /dev/null) ]])\[\033$MAGENTA\]\$(parse_git_branch)\[\033$GREEN\]) \$\[$RESET\] "
 
-PATH=$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin
+# Go setup.
+export GOPATH=$HOME/Work/Go/Workspace
+PATH=$PATH:$GOPATH/bin
 export PATH
+
 EDITOR=/usr/bin/vim
 export EDITOR
 
+# istio manual install in /opt
+export PATH=/opt/istio/bin:$PATH
+
 alias "ls=ls -G"
 alias curl-ajax='curl -H "X-Requested-With: XMLHttpRequest"'
+alias k='kubectl'
 
-# Temporary solution to a ML bug.
-unset LD_LIBRARY_PATH
-unset DYLD_LIBRARY_PATH
+export LC_ALL=pl_PL.UTF-8
+export LANG=en_US.UTF-8
