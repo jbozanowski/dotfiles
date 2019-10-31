@@ -1,5 +1,5 @@
-" Use bash as vim shell.
-set shell=/bin/bash
+" Use zsh as vim shell.
+set shell=/bin/zsh
 
 " Activate pathogen.
 filetype off
@@ -42,6 +42,9 @@ endfunction
 call SetTextWidth(79)
 autocmd FileType text,tex,markdown,plaintex,context,gitcommit :call SetTextWidth(72)
 autocmd FileType rust :call SetTextWidth(99)
+autocmd FileType html :call SetTextWidth(100)
+autocmd FileType htmldjango :call SetTextWidth(100)
+autocmd FileType python :call SetTextWidth(80)
 
 " General settings.
 
@@ -50,20 +53,19 @@ autocmd FileType rust :call SetTextWidth(99)
 " Default: tcq
 set formatoptions=tcqrnl1
 
-" Number of spaces that a <Tab> in the file counts for.
-set tabstop=8
-
 function! SetIndentation(size)
     " Number of spaces to use for each step of (auto)indent.
     execute "set shiftwidth=".a:size
     " Number of spaces that a <Tab> counts for while performing editing
     " operations, like inserting a <Tab> or using <BS>.
     execute "set softtabstop=".a:size
+    " Number of spaces that a <Tab> in the file counts for.
+    execute "set tabstop=".a:size
 endfunction
 call SetIndentation(4)
 
 " Indentation for specific file formats.
-autocmd FileType yaml,json,ruby :call SetIndentation(2)
+autocmd FileType yaml,json,ruby,javascript :call SetIndentation(2)
 autocmd FileType ada,rst :call SetIndentation(3)
 
 " In Insert mode: Use the appropriate number of spaces to insert a <Tab>.
@@ -209,6 +211,8 @@ let g:syntastic_enable_signs=0
 let g:syntastic_check_on_open=1
 let g:syntastic_error_symbol="X"
 let g:syntastic_warning_symbol="!"
+let g:syntastic_python_checkers=["flake8", "pylint"]
+let g:syntastic_python_flake8_args="--max-line-length=80"
 
 " NERDTree settings.
 let NERDTreeShowHidden=1
@@ -216,6 +220,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 " vim-airline settings.
 let g:airline_theme='kalisi'
+" Removed git branch.
+let g:airline_section_b="%{airline#util#wrap(airline#extensions#hunks#get_hunks(),0)}"
 
 " Vim-isort under ctrl+i
 let g:vim_isort_map = '<C-i>'
