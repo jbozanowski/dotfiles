@@ -11,8 +11,7 @@ GREEN=$(tput setaf 2)
 BLUE=$(tput setaf 4)
 MAGENTA=$(tput setaf 5)
 WHITE=$(tput setaf 7)
-#PS1='\W \u\$ '
-PS1="\[$GREEN\]\u\[$RESET\] \[$BLUE\]\W\[$RESET\] \[$GREEN\](\$([[ -n \$(git branch 2> /dev/null) ]])\[\033$MAGENTA\]\$(parse_git_branch)\[\033$GREEN\]) \$\[$RESET\] " 
+PS1="\[$GREEN\]\D{%m-%d-%s} \t\[$RESET\] \[$BLUE\]\W\[$RESET\] \[$GREEN\](\$([[ -n \$(git branch 2> /dev/null) ]])\[\033$MAGENTA\]\$(parse_git_branch)\[\033$GREEN\]) \$\[$RESET\] "
 
 PATH=$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin
 export PATH
