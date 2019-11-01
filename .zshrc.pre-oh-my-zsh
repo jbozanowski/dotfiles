@@ -1,0 +1,15 @@
+# PS1="%n@%m %1~ %# "
+PS1="%(?.%F{green}√.%F{red}?%?)%f %* %F{240}%1~%f %# "
+
+alias "ls=ls -G"
+alias k='kubectl'
+alias curl-ajax='curl -H "X-Requested-With: XMLHttpRequest"'
+
+export LC_ALL=pl_PL.UTF-8
+export LANG=en_US.UTF-8
+
+autoload -Uz compinit && compinit
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
