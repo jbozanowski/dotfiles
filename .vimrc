@@ -65,7 +65,7 @@ endfunction
 call SetIndentation(4)
 
 " Indentation for specific file formats.
-autocmd FileType yaml,json,ruby,javascript :call SetIndentation(2)
+autocmd FileType yaml,json,ruby,javascrip,markdown :call SetIndentation(2)
 autocmd FileType ada,rst :call SetIndentation(3)
 
 " In Insert mode: Use the appropriate number of spaces to insert a <Tab>.
