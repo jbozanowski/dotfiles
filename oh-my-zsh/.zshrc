@@ -19,8 +19,26 @@ export EDITOR='vim'
 
 alias "ls=ls -G"
 alias k='kubectl'
-alias curl-ajax='curl -H "X-Requested-With: XMLHttpRequest"'
+alias ktx='kubectx'
 
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+export GOPATH="/Users/jbozanowski/Work/Go/Workspace"
+export CDPATH=$CDPATH:$GOPATH/src
+
+export GPG_TTY=$(tty)
+
+export LDFLAGS="-L/usr/local/opt/libxml2/lib"
+export CPPFLAGS="-I/usr/local/opt/libxml2/include"
+
+export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
+
+# export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/Users/jbozanowski/Library/Python/3.7/bin:$PATH"
+export PATH="/Users/jbozanowski/Work/Go/Workspace/bin:$PATH"
+export PATH="/usr/local/opt/gettext/bin:$PATH"
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
+
+eval "$(pyenv virtualenv-init -)"
+
